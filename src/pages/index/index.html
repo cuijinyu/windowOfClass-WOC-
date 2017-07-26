@@ -1,0 +1,74 @@
+<!--
+  Generated template for the Index page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4>
+          <button ion-button outline>
+            <ion-icon name="md-cog"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col col-4 class="title">发现</ion-col>
+        <ion-col col-4></ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <ion-item>
+          <ion-label color="primary">搜索</ion-label>
+          <ion-input placeholder="请输入您要搜索的功能"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <ion-slides #mySlider style="width:100%;height:200px">
+          <ion-slide>
+            <img src="../../assets/images/background.jpg" >
+          </ion-slide>
+          <ion-slide>
+            <img src="../../assets/images/背景.jpg" >
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+      <ion-row>
+        <ion-col col-2></ion-col>
+        <ion-col col-8>
+          <button ion-button round outline class="choose" (click)="getMyPush()">每日推送</button>
+        </ion-col>
+        <ion-col col-2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-2></ion-col>
+        <ion-col col-8>
+          <button ion-button round outline class="choose" (click)="getMyGroup()">我的群</button>
+        </ion-col>
+        <ion-col col-2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-2></ion-col>
+        <ion-col col-8>
+          <button ion-button round outline class="choose" (click)="getMyData()" >数据统计</button>
+        </ion-col>
+        <ion-col col-2>
+        </ion-col>
+      </ion-row>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
